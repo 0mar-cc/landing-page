@@ -1,6 +1,5 @@
 body{
-    width: 1835px;
-    min-height: 1080px;
+    min-width: 1730px;
     display:flex;
     flex-direction: column;
     margin:0;
@@ -10,16 +9,16 @@ body{
 /* The top section of the page*/
 .top-container{
     background-color: purple;
-    max-height: 500px;
+    max-height: 600px;
     display:flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 1 1 0;
 }
 
 /* contain the logo and the links */
 .header{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     gap: 600px;
     flex:1;
 
@@ -67,7 +66,7 @@ a:hover{
 /* contain the front text and image and the signup button */
 .front-content{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex:1;
     gap: 200px;
 }
@@ -75,7 +74,7 @@ a:hover{
 
 .front-content img{
     width: 500px;
-    margin-right: 250px;
+    margin-right: 270px;
     margin-top: -70px;
     display:flex;
     flex:0 1 auto;
@@ -83,7 +82,7 @@ a:hover{
 .text-container{
     width: 500px;
     height:300px;
-    margin-left:300px;
+    margin-left:350px;
     margin-top: 50px;
     display:flex;
     flex-direction: column;
@@ -131,28 +130,63 @@ a:hover{
     transform: translateY(4px);
 }
 
-.head{
-    display:flex;
-    justify-content: center;
-
-}
-.content{
-    height: 300px;
-    display:flex;
-    justify-content: center;
-}
-
-img.content{
+.char-container{
+    max-height: 600px;
     display: flex;
+    justify-content: space-between;
 }
 
+.char-container .side-img{
+    width:300px;    
+}
+
+.head{
+    display: flex;
+    margin-right: 100px;
+    justify-content: center;
+    align-self: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.characters{
+    background-color: #270E42;
+    color: white;
+    max-width: 1300px;
+    max-height: 600px;
+    display: flex;
+    gap:5px;
+    flex-wrap: wrap;
+    gap: 80px;
+    flex:0 1 auto;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.content{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.content img{
+    width:150px;
+    height: 150px;
+
+}
 
 
 
 .quote-content{
     height: 200px;
-    background-color: gray;
+    background-color: #084605;
     display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
