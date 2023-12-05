@@ -1,16 +1,18 @@
 body{
+    width: 1850px;
     display:flex;
     flex-direction: column;
     margin:0;
+    flex: 1 1 auto;
 }
 
 /* The top section of the page*/
 .top-container{
     background-color: purple;
-    height: 500px;
+    max-height: 500px;
     display:flex;
     flex-direction: column;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 }
 
 /* contain the logo and the links */
@@ -47,6 +49,7 @@ ul{
     margin-right: 410px;
     display:flex;
     gap: 30px;
+
 }
 
 a{
@@ -64,6 +67,7 @@ a:hover{
 .front-content{
     display:flex;
     justify-content: space-between;
+    flex:1;
     gap: 200px;
 }
 
@@ -71,37 +75,61 @@ a:hover{
 .front-content img{
     width: 500px;
     margin-right: 300px;
-    margin-top: -80px
+    margin-top: -80px;
+    display:flex;
+    flex:1;
 }
 .text-container{
     width: 500px;
+    height:300px;
     margin-left:300px;
     margin-top: 50px;
     display:flex;
     flex-direction: column;
-    gap: 10px;
+    gap:5px;
 }
 
 .description{
     color:greenyellow;
     font-size: 65px;
     font-weight:bolder;
+    display:flex;
+    flex:0 1 auto;
+
 }
 
 .text-container .text{
-    color:white;
+    color:black;
     font-size: 20px;
+    max-height: 0;
+    display: flex;
+
 }
 
 button{
     background-color:#3882F6;
     color: white;
     width:150px;
+    border:none;
+    text-decoration: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 9px black;
     padding: 5px 20px;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 80px;
+}
+
+button:hover{
+    background-color: lightskyblue;
+}
+button:active{
+    background-color: #3882F6;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.content{
     display:flex;
-    flex-grow:0;
-    justify-content: center;
 }
