@@ -1,9 +1,10 @@
 body{
-    width: 1850px;
+    width: 1835px;
+    min-height: 1080px;
     display:flex;
     flex-direction: column;
     margin:0;
-    flex: 1 1 auto;
+
 }
 
 /* The top section of the page*/
@@ -46,7 +47,7 @@ ul{
     list-style-type: none ;
     padding:0;   
     margin-top:15px;
-    margin-right: 410px;
+    margin-right: 395px;
     display:flex;
     gap: 30px;
 
@@ -74,10 +75,10 @@ a:hover{
 
 .front-content img{
     width: 500px;
-    margin-right: 300px;
-    margin-top: -80px;
+    margin-right: 250px;
+    margin-top: -70px;
     display:flex;
-    flex:1;
+    flex:0 1 auto;
 }
 .text-container{
     width: 500px;
@@ -99,14 +100,14 @@ a:hover{
 }
 
 .text-container .text{
-    color:black;
+    color:white;
     font-size: 20px;
     max-height: 0;
     display: flex;
 
 }
 
-button{
+.front-content button{
     background-color:#3882F6;
     color: white;
     width:150px;
@@ -121,15 +122,57 @@ button{
     margin-top: 80px;
 }
 
-button:hover{
+.front-content button:hover{
     background-color: lightskyblue;
 }
-button:active{
+.front-content button:active{
     background-color: #3882F6;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
-.content{
+.head{
     display:flex;
+    justify-content: center;
+
+}
+.content{
+    height: 300px;
+    display:flex;
+    justify-content: center;
+}
+
+img.content{
+    display: flex;
+}
+
+
+
+
+.quote-content{
+    height: 200px;
+    background-color: gray;
+    display:flex;
+}
+
+
+.hype{
+    height: 200px;
+    display:flex;
+}
+
+.hype-content{
+    display: flex;
+}
+
+.footer{
+    background-color: lightgreen;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 }
