@@ -1,0 +1,107 @@
+body{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+}
+
+/* The top section of the page*/
+.top-container{
+    background-color: purple;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+
+/* contain the logo and the links */
+.header{
+    display:flex;
+    justify-content:space-between;
+    gap: 600px;
+    flex:1;
+
+}
+
+.header .text{
+    display: flex;
+    color:#363636;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.logo{
+    display:flex;
+}
+
+.header img{
+    width: 100px;
+    margin-left: 350px;
+}
+
+ul{
+    list-style-type: none ;
+    padding:0;   
+    margin-top:15px;
+    margin-right: 410px;
+    display:flex;
+    gap: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+a:hover{
+    color: wheat;
+}
+
+/* contain the front text and image and the signup button */
+.front-content{
+    display:flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+
+.front-content img{
+    width: 500px;
+    margin-right: 300px;
+    margin-top: -80px
+}
+.text-container{
+    width: 500px;
+    margin-left:300px;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description{
+    color:greenyellow;
+    font-size: 65px;
+    font-weight:bolder;
+}
+
+.text-container .text{
+    color:white;
+    font-size: 20px;
+}
+
+button{
+    background-color:#3882F6;
+    color: white;
+    width:150px;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    display:flex;
+    flex-grow:0;
+    justify-content: center;
+}
