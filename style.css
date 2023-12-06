@@ -6,10 +6,10 @@ body{
 
 }
 
-/* The top section of the page*/
+/* The top section of the page270E42 */
 .top-container{
     background-color: #270E42;
-    max-height: 600px;
+    height: 600px;
     display:flex;
     flex-direction: column;
     flex: 0 1 auto;
@@ -18,7 +18,7 @@ body{
 /* contain the logo and the links */
 .header{
     height: 50px;
-    background-color: #829356;
+    background-color: white;
     display:flex;
     justify-content:space-around;
     gap: 600px;
@@ -57,7 +57,7 @@ body{
 
 /* The logo image */
 .header img{
-    min-height: 150px;
+    height: 150px;
     width: 100px;
     margin-left: 350px;
 }
@@ -74,7 +74,7 @@ ul{
 }
 
 a{
-    color: white;
+    color: #B42C44;
     width: 70px;
     text-decoration: none;
     font-size: 20px;
@@ -84,7 +84,7 @@ a{
 }
 
 a:hover{
-    color: wheat;
+    color: #6A0D18;
 }
 
 
@@ -92,15 +92,18 @@ a:hover{
 
 /* contain the front text and image and the signup button */
 .front-content{
+    height: 700px;
     display:flex;
-    align-items: flex-end;
+    justify-content: start;
     flex:0 1 auto;
     gap: 200px;
 }
 
 /* The header image */
 .front-content img{
-    width: 500px;
+    height: 700px;
+    margin-top: 20px;
+    position:sticky;
 }
 
 /* Contain the front text of the page */
@@ -109,8 +112,9 @@ a:hover{
     height:300px;
     margin-left:350px;
     display:flex;
+    align-self: center;
     flex-direction: column;
-    gap:5px;
+    gap:20px;
 }
 
 /* The header text */
@@ -126,15 +130,15 @@ a:hover{
 .text-container .text{
     color:white;
     font-size: 20px;
-    max-height: 0;
+    line-height: 1.5;
     display: flex;
 
 }
 
 .front-content button{
-    background-color:#3882F6;
+    background-color:#6588A6;
     color: white;
-    width:150px;
+    width:110px;
     border:none;
     text-decoration: none;
     outline: none;
@@ -143,14 +147,13 @@ a:hover{
     padding: 5px 20px;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 80px;
 }
 
 .front-content button:hover{
-    background-color: lightskyblue;
+    background-color: #89aac7;
 }
 .front-content button:active{
-    background-color: #3882F6;
+    background-color: #6588A6;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -164,7 +167,7 @@ a:hover{
     height: 500px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color:#EB950E;
 }
 
 /* The side image in the page */
@@ -175,7 +178,7 @@ a:hover{
 /* The description of the text */
 .head{
     width: 400px;
-    color: #37474F;
+    color: #6A0D18;
     display: flex;
     align-self: center;
     font-size: 70px;
@@ -189,7 +192,8 @@ a:hover{
     gap:10px;
     padding: 20px;
     margin-right: 150px;
-    background-color: #C2571A;
+    background-color: #6A644A;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -223,17 +227,17 @@ a:hover{
     font-weight: bold;
 }
 
-a:hover{
+.author a:hover{
     color:#90A4AE;
 }
 
 
 
 
-/* The quote style  */
+/* The quote style 829356 */
 .quote-content{
-    height: 400px;
-    background-color: #829356;
+    height: 300px;
+    background-color: #244D4f;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -246,7 +250,7 @@ a:hover{
     font-size: 30px;
 }
 .qoute-inf{
-    color:#263238;
+    color:wheat;
     font-size: 18px;
     font-weight: bold;
     display:flex;
@@ -257,20 +261,79 @@ a:hover{
 
 
 
-.hype{
+.join{
+    background-color: #6A0D18;
     height: 300px;
     display:flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
-.hype-content{
+.join-content{
+    color:black;
+    height: 200px;
+    width: 1200px;
+    background-color: white;
+    border-radius: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
+
+.join-container{
+    height: 100px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 auto;
+} 
+
+.call{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.opinion{
+    color:black;
+    font-size: 18px;
+}
+
+
+.join button{
+    background-color:white;
+    color: black;
+    width:140px;
+    height: 40px;
+    outline:auto;
+    border-radius: 10px;
+    padding:  20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.join button:hover{
+    background-color: white;
+}
+.join button:active{
+    background-color: whitesmoke;
+    transform: translateY(4px);
+}
+
 
 .footer{
-    background-color: lightgreen;
+    background-color: #6A644A;
     font-size: 20px;
     font-weight: bold;
-    color: blue;
+    color: black;
     padding: 15px;
     display:flex;
     justify-content: center;
