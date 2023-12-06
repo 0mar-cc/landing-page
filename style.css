@@ -1,72 +1,80 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
-html{
+body {
     display: flex;
     justify-content: center;
 }
-body{
-    max-width:1440px;
-    display:flex;
-    flex: 0 1 auto;
+
+
+
+.stracture {
+    width: 1440px;
+    display: flex;
     flex-direction: column;
 }
 
 
 /* The top section of the page270E42 */
-.top-container{
+.top-container {
     height: 600px;
     background-color: #270E42;
-    display:flex;
-    align-items: center;
+    display: flex;
     flex-direction: column;
-    flex: 0 0 auto;
+    justify-content: center;
 }
 
 /* contain the logo and the links */
-.header{
+.header {
     height: 50px;
     background-color: #5b8561;
-    display:flex;
-    justify-content:space-between;
-    gap: 300px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Contain the logo image and name */
-.logo{
-    display:flex;
+.logo {
+    display: flex;
+    margin-left: -300px;
 }
 
 /* The page name */
-.logo .text1,.text2,.text3,.text4,.text5,.text6{
-    display: flex;
-    align-items: center;
+.logo .text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6 {
     font-size: 25px;
     font-weight: bold;
     margin-left: 15px;
     margin-top: 15px;
     margin: 5px;
+    display: flex;
+    align-items: center;
 }
 
-.text1,.text4{
+.text1,
+.text4 {
     color: #6A0F18;
 }
 
-.text2,.text5{
+.text2,
+.text5 {
     color: #FF9821;
 }
 
-.text3,.text6{
-    color:#244D4F;
+.text3,
+.text6 {
+    color: #244D4F;
 }
 
 /* The logo image */
-.header img{
+.header img {
     height: 150px;
     width: 100px;
     margin-left: 350px;
@@ -74,27 +82,23 @@ body{
 }
 
 /* The page options */
-ul{
-    list-style-type: none ;    
-    flex: 1 0 auto;
-    padding:0;   
-    margin-top:15px;
-    display:flex;
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+    margin-right: 150px;
+    display: flex;
     gap: 30px;
 
 }
 
-a{
+a {
     color: black;
     width: 70px;
     text-decoration: none;
     font-size: 20px;
-    display: flex;
-    flex: 1 0 auto;
-
 }
 
-a:hover{
+a:hover {
     color: #6A0D18;
 }
 
@@ -102,59 +106,44 @@ a:hover{
 
 
 /* contain the front text and image and the signup button */
-.front-content{
-    display:flex;
+.front-content {
+    display: flex;
     justify-content: center;
-    flex:1 0 auto;
     gap: 200px;
 }
 
-/* The header image */
-.front-content img{
-    width: 500px;
-    margin-top:80px ;
-    position: sticky;
-    
-}
+
 
 /* Contain the front text of the page */
-.text-container{
-    width: 500px;
-    margin-left:50px;
-    display:flex;
-    flex: 0 0 auto;
+.text-container {
+    margin-left: 100px;
+    display: flex;
     justify-content: start;
     align-self: center;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
 
 /* The header text */
-.description{
-    color:greenyellow;
+.description {
+    color: greenyellow;
     font-size: 65px;
-    font-weight:bolder;
-    display:flex;
-    justify-content: start;
-    flex:1 0 auto;
+    font-weight: bolder;
 
 }
 
-.text-container .text{
-    color:white;
+.text-container .text {
+    color: white;
     font-size: 20px;
     line-height: 1.5;
-    display: flex;
-    justify-content: start;
-    flex:1 0 auto;
 
 }
 
-.front-content button{
-    background-color:#6588A6;
+.front-content button {
+    background-color: #6588A6;
     color: white;
-    width:110px;
-    border:none;
+    width: 110px;
+    border: none;
     text-decoration: none;
     outline: none;
     border-radius: 15px;
@@ -164,76 +153,80 @@ a:hover{
     font-weight: bold;
 }
 
-.front-content button:hover{
+.front-content button:hover {
     background-color: #89aac7;
 }
-.front-content button:active{
+
+.front-content button:active {
     background-color: #6588A6;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
+/* The header image */
+.front-content img {
+    width: 550px;
+    margin-top: 150px;
+    position: sticky;
+
+}
 
 
 /* Mid container that had info */
-.char-container{
+.char-container {
     display: flex;
-    flex: 1 0 auto;
     justify-content: space-between;
-    background-color:#EB950E;
+    background-color: #EB950E;
 }
 
 /* The side image in the page */
-.char-container .side-img{
-    width:300px; 
+.char-container .side-img {
+    width: 300px;
 }
 
 /* The description of the text */
-.head{
+.head {
     width: 400px;
     color: white;
     display: flex;
-    flex: 1 0 auto;
     align-self: center;
     font-size: 70px;
     font-weight: bold;
 }
 
 /* The long text on the mid of the page */
-.content{
+.content {
     width: 850px;
-    gap:10px;
+    gap: 10px;
     padding: 20px;
-    margin:50px 150px 50px 0px;
+    margin: 50px -80px 50px 0px;
     background-color: #6A644A;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-self: center;
-    flex:1 0 auto;
 }
 
 /* The head of the story */
-.history-header{
+.history-header {
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
 
 
-.history{
-    color:white;
-    font-size:18px;
+.history {
+    color: white;
+    font-size: 18px;
     line-height: 1.4;
 }
 
-.author{
-    display:flex;
-    flex: 0 1 auto;
+.author {
+    display: flex;
     align-self: end;
 }
 
-.author a{
+.author a {
     width: 160px;
     color: #263238;
 
@@ -241,131 +234,131 @@ a:hover{
     font-weight: bold;
 }
 
-.author a:hover{
-    color:#90A4AE;
+.author a:hover {
+    color: #90A4AE;
 }
 
 
 
 
 /* The quote style */
-.quote-content{
+.quote-content {
     height: 400px;
     background-color: #244D4f;
-    display:flex;
-    flex: 0 1 auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.quote-container{
+
+.quote-container {
     display: flex;
-    flex: 1;
     flex-direction: column;
 }
-.qoute{
+
+.qoute {
     color: white;
     font-size: 28px;
-    margin-left: 100px;
+    margin-left: 80px;
 }
-.qoute-inf{
-    color:#EB950E;
+
+.qoute-inf {
+    color: #EB950E;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 490px;
+    margin-left: 200px;
 
 }
 
-.quote-img{
+.quote-img {
     width: 400px;
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 
 /* The Call container */
-.join{
+.join {
+    height: 300px;
     background-color: #6A0D18;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 auto;
     padding: 100px 60px;
 
 
 }
 
-.join-content{
-    color:black;
+.join-content {
+    color: black;
     width: 800px;
     height: 200px;
     background-color: white;
     border-radius: 20px;
     display: flex;
-    flex: 0 1 auto;
     justify-content: start;
     align-items: center;
     gap: 30px;
 }
 
-.join-container{
-    width:400px;
+.join-container {
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 0 1 auto;
-} 
-.call-img{
+}
+
+.call-img {
     width: 180px;
     margin-bottom: 60px;
     position: sticky;
 }
 
-.call{
+.call {
     color: black;
     font-size: 25px;
     font-weight: bold;
-    
+
 }
-.opinion{
-    color:black;
+
+.opinion {
+    color: black;
     font-size: 18px;
 }
 
 
-.join button{
-    background-color:white;
+.join button {
+    background-color: white;
     color: black;
-    width:140px;
+    width: 140px;
     height: 40px;
-    outline:auto;
+    outline: auto;
     border-radius: 10px;
-    padding:  20px;
+    padding: 20px;
     font-size: 18px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.join button:hover{
+.join button:hover {
     background-color: white;
 }
-.join button:active{
+
+.join button:active {
     background-color: whitesmoke;
     transform: translateY(4px);
 }
 
 
-.footer{
+.footer {
     background-color: #6A644A;
     font-size: 20px;
     font-weight: bold;
     color: white;
     padding: 15px;
-    display:flex;
-    flex: 1 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    
 }
