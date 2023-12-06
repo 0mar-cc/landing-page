@@ -8,45 +8,66 @@ body{
 
 /* The top section of the page*/
 .top-container{
-    background-color: purple;
+    background-color: #270E42;
     max-height: 600px;
     display:flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex: 0 1 auto;
 }
 
 /* contain the logo and the links */
 .header{
+    height: 50px;
+    background-color: #829356;
     display:flex;
     justify-content:space-around;
     gap: 600px;
-    flex:1;
+    flex:0 1 auto;
 
 }
 
-.header .text{
+/* Contain the logo image and name */
+.logo{
+    display:flex;
+    flex:1;
+}
+
+/* The page name */
+.logo .text1,.text2,.text3,.text4,.text5,.text6{
     display: flex;
-    color:#363636;
+    align-items: center;
     font-size: 25px;
     font-weight: bold;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin: 5px;
 }
 
-.logo{
-    display:flex;
+.text1,.text4{
+    color: #6A0F18;
 }
 
+.text2,.text5{
+    color: #FF9821;
+}
+
+.text3,.text6{
+    color:#244D4F;
+}
+
+/* The logo image */
 .header img{
+    min-height: 150px;
     width: 100px;
     margin-left: 350px;
 }
 
+/* The page options */
 ul{
     list-style-type: none ;
     padding:0;   
     margin-top:15px;
-    margin-right: 395px;
+    margin-right: 480px;
     display:flex;
     gap: 30px;
 
@@ -54,8 +75,11 @@ ul{
 
 a{
     color: white;
+    width: 70px;
     text-decoration: none;
     font-size: 20px;
+    display: flex;
+    flex: 0 0 auto;
 
 }
 
@@ -63,32 +87,33 @@ a:hover{
     color: wheat;
 }
 
+
+
+
 /* contain the front text and image and the signup button */
 .front-content{
     display:flex;
-    justify-content: space-around;
-    flex:1;
+    align-items: flex-end;
+    flex:0 1 auto;
     gap: 200px;
 }
 
-
+/* The header image */
 .front-content img{
     width: 500px;
-    margin-right: 270px;
-    margin-top: -70px;
-    display:flex;
-    flex:0 1 auto;
 }
+
+/* Contain the front text of the page */
 .text-container{
     width: 500px;
     height:300px;
     margin-left:350px;
-    margin-top: 50px;
     display:flex;
     flex-direction: column;
     gap:5px;
 }
 
+/* The header text */
 .description{
     color:greenyellow;
     font-size: 65px;
@@ -130,68 +155,110 @@ a:hover{
     transform: translateY(4px);
 }
 
+
+
+
+
+/* Mid container that had info */
 .char-container{
-    max-height: 600px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
+/* The side image in the page */
 .char-container .side-img{
-    width:300px;    
+    width:300px; 
 }
 
+/* The description of the text */
 .head{
+    width: 400px;
+    color: #37474F;
     display: flex;
-    margin-right: 100px;
-    justify-content: center;
     align-self: center;
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bold;
 }
 
-.characters{
-    background-color: #270E42;
-    color: white;
-    max-width: 1300px;
-    max-height: 600px;
-    display: flex;
-    gap:5px;
-    flex-wrap: wrap;
-    gap: 80px;
-    flex:0 1 auto;
-    justify-content: center;
-    align-self: center;
-}
-
-
+/* The long text on the mid of the page */
 .content{
-    width: 300px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: 1000px;
+    height: 300px;
     gap:10px;
+    padding: 20px;
+    margin-right: 150px;
+    background-color: #C2571A;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex:0 0 auto;
 }
 
-.content img{
-    width:150px;
-    height: 150px;
+/* The head of the story */
+.history-header{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
 
+
+.history{
+    color:white;
+    font-size:18px;
+    line-height: 1.4;
+}
+
+.author{
+    display:flex;
+    align-self: end;
+}
+
+.author a{
+    width: 160px;
+    color: #263238;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a:hover{
+    color:#90A4AE;
 }
 
 
 
+
+/* The quote style  */
 .quote-content{
-    height: 200px;
-    background-color: #084605;
+    height: 400px;
+    background-color: #829356;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap:30px
 }
+
+.qoute{
+    color: white;
+    font-size: 30px;
+}
+.qoute-inf{
+    color:#263238;
+    font-size: 18px;
+    font-weight: bold;
+    display:flex;
+    align-self: end;
+    margin-right: 550px;
+
+}
+
 
 
 .hype{
-    height: 200px;
+    height: 300px;
     display:flex;
 }
 
