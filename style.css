@@ -1,35 +1,45 @@
-body{
-    min-width: 1730px;
-    display:flex;
-    flex-direction: column;
+*{
     margin:0;
-
+    padding:0;
+    box-sizing: border-box;
 }
+
+
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    max-width:1440px;
+    display:flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+}
+
 
 /* The top section of the page270E42 */
 .top-container{
-    background-color: #270E42;
     height: 600px;
+    background-color: #270E42;
     display:flex;
+    align-items: center;
     flex-direction: column;
-    flex: 0 1 auto;
+    flex: 0 0 auto;
 }
 
 /* contain the logo and the links */
 .header{
     height: 50px;
-    background-color: white;
+    background-color: #5b8561;
     display:flex;
-    justify-content:space-around;
-    gap: 600px;
-    flex:0 1 auto;
+    justify-content:space-between;
+    gap: 300px;
 
 }
 
 /* Contain the logo image and name */
 .logo{
     display:flex;
-    flex:1;
 }
 
 /* The page name */
@@ -60,26 +70,27 @@ body{
     height: 150px;
     width: 100px;
     margin-left: 350px;
+    position: sticky;
 }
 
 /* The page options */
 ul{
-    list-style-type: none ;
+    list-style-type: none ;    
+    flex: 1 0 auto;
     padding:0;   
     margin-top:15px;
-    margin-right: 480px;
     display:flex;
     gap: 30px;
 
 }
 
 a{
-    color: #B42C44;
+    color: black;
     width: 70px;
     text-decoration: none;
     font-size: 20px;
     display: flex;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
 
 }
 
@@ -92,26 +103,27 @@ a:hover{
 
 /* contain the front text and image and the signup button */
 .front-content{
-    height: 700px;
     display:flex;
-    justify-content: start;
-    flex:0 1 auto;
+    justify-content: center;
+    flex:1 0 auto;
     gap: 200px;
 }
 
 /* The header image */
 .front-content img{
-    height: 700px;
-    margin-top: 20px;
-    position:sticky;
+    width: 500px;
+    margin-top:80px ;
+    position: sticky;
+    
 }
 
 /* Contain the front text of the page */
 .text-container{
     width: 500px;
-    height:300px;
-    margin-left:350px;
+    margin-left:50px;
     display:flex;
+    flex: 0 0 auto;
+    justify-content: start;
     align-self: center;
     flex-direction: column;
     gap:20px;
@@ -123,7 +135,8 @@ a:hover{
     font-size: 65px;
     font-weight:bolder;
     display:flex;
-    flex:0 1 auto;
+    justify-content: start;
+    flex:1 0 auto;
 
 }
 
@@ -132,6 +145,8 @@ a:hover{
     font-size: 20px;
     line-height: 1.5;
     display: flex;
+    justify-content: start;
+    flex:1 0 auto;
 
 }
 
@@ -162,8 +177,8 @@ a:hover{
 
 /* Mid container that had info */
 .char-container{
-    height: 500px;
     display: flex;
+    flex: 1 0 auto;
     justify-content: space-between;
     background-color:#EB950E;
 }
@@ -178,6 +193,7 @@ a:hover{
     width: 400px;
     color: white;
     display: flex;
+    flex: 1 0 auto;
     align-self: center;
     font-size: 70px;
     font-weight: bold;
@@ -185,17 +201,16 @@ a:hover{
 
 /* The long text on the mid of the page */
 .content{
-    width: 1000px;
-    height: 300px;
+    width: 850px;
     gap:10px;
     padding: 20px;
-    margin-right: 150px;
+    margin:50px 150px 50px 0px;
     background-color: #6A644A;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-self: center;
-    flex:0 0 auto;
+    flex:1 0 auto;
 }
 
 /* The head of the story */
@@ -214,6 +229,7 @@ a:hover{
 
 .author{
     display:flex;
+    flex: 0 1 auto;
     align-self: end;
 }
 
@@ -234,21 +250,22 @@ a:hover{
 
 /* The quote style */
 .quote-content{
-    height: 300px;
+    height: 400px;
     background-color: #244D4f;
     display:flex;
-    justify-content: end;
+    flex: 0 1 auto;
+    justify-content: space-between;
     align-items: center;
-    gap:250px;
 }
 .quote-container{
     display: flex;
+    flex: 1;
     flex-direction: column;
-    gap: 10px;    
 }
 .qoute{
     color: white;
     font-size: 28px;
+    margin-left: 100px;
 }
 .qoute-inf{
     color:#EB950E;
@@ -260,34 +277,36 @@ a:hover{
 
 .quote-img{
     width: 400px;
+    margin: 0;
 }
 
 
 /* The Call container */
 .join{
     background-color: #6A0D18;
-    height: 300px;
     display:flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 auto;
+    padding: 100px 60px;
 
 
 }
 
 .join-content{
     color:black;
+    width: 800px;
     height: 200px;
-    width: 1000px;
     background-color: white;
     border-radius: 20px;
     display: flex;
+    flex: 0 1 auto;
     justify-content: start;
     align-items: center;
-    gap: 100px;
+    gap: 30px;
 }
 
 .join-container{
-    height: 100px;
     width:400px;
     display: flex;
     flex-direction: column;
@@ -295,8 +314,9 @@ a:hover{
     flex: 0 1 auto;
 } 
 .call-img{
-    width: 150px;
-    margin-bottom: 80px;
+    width: 180px;
+    margin-bottom: 60px;
+    position: sticky;
 }
 
 .call{
@@ -340,10 +360,12 @@ a:hover{
     background-color: #6A644A;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: white;
     padding: 15px;
     display:flex;
+    flex: 1 0 auto;
     justify-content: center;
     align-items: center;
+
     
 }
