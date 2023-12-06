@@ -16,23 +16,16 @@ body {
     width: 1440px;
     display: flex;
     flex-direction: column;
+    justify-content: start;
 }
 
-
-/* The top section of the page270E42 */
-.top-container {
-    height: 600px;
-    background-color: #270E42;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 /* contain the logo and the links */
 .header {
     height: 50px;
     background-color: #5b8561;
-    display: flex;
+    display: flex ;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -70,7 +63,7 @@ body {
 
 .text3,
 .text6 {
-    color: #244D4F;
+    color: #270E42;
 }
 
 /* The logo image */
@@ -78,38 +71,47 @@ body {
     height: 150px;
     width: 100px;
     margin-left: 350px;
+    margin-top: 100PX;
     position: sticky;
 }
 
 /* The page options */
 ul {
     list-style-type: none;
-    margin-top: 15px;
-    margin-right: 150px;
+    margin: 0 150px 0 0;
     display: flex;
-    gap: 30px;
-
+    flex: 0 1 auto;
+    gap: 20px;
+    padding:0;
 }
 
 a {
-    color: black;
+    color: white;
     width: 70px;
     text-decoration: none;
     font-size: 20px;
+    display: block;
 }
 
-a:hover {
-    color: #6A0D18;
+a:hover{
+    color: goldenrod;
 }
 
 
+/* The top section of the page270E42 */
+.top-container {
+    height: 550px;
+    background-color: #270E42;
+    display: flex;
+}
 
 
 /* contain the front text and image and the signup button */
 .front-content {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    align-items: center;
+    gap: 170px;
 }
 
 
@@ -117,9 +119,10 @@ a:hover {
 /* Contain the front text of the page */
 .text-container {
     margin-left: 100px;
+    width:500px;
+    margin-left:200px;
     display: flex;
     justify-content: start;
-    align-self: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -166,8 +169,8 @@ a:hover {
 /* The header image */
 .front-content img {
     width: 550px;
-    margin-top: 150px;
-    position: sticky;
+    margin-top: 200px;
+    position:sticky;
 
 }
 
@@ -265,7 +268,7 @@ a:hover {
     color: #EB950E;
     font-size: 18px;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 500px;
 
 }
 
@@ -342,7 +345,7 @@ a:hover {
 }
 
 .join button:hover {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .join button:active {
@@ -362,3 +365,5 @@ a:hover {
     align-items: center;
 
 }
+
+
