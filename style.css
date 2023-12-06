@@ -178,7 +178,7 @@ a:hover{
 /* The description of the text */
 .head{
     width: 400px;
-    color: #6A0D18;
+    color: white;
     display: flex;
     align-self: center;
     font-size: 70px;
@@ -234,29 +234,34 @@ a:hover{
 
 
 
-/* The quote style 829356 */
+/* The quote style */
 .quote-content{
     height: 300px;
     background-color: #244D4f;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    gap:30px
+    gap:250px;
 }
-
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
 .qoute{
     color: white;
-    font-size: 30px;
+    font-size: 28px;
 }
 .qoute-inf{
-    color:wheat;
+    color:#EB950E;
     font-size: 18px;
     font-weight: bold;
-    display:flex;
-    align-self: end;
-    margin-right: 550px;
+    margin-left: 490px;
 
+}
+
+.quote-img{
+    width: 400px;
 }
 
 
@@ -274,11 +279,11 @@ a:hover{
 .join-content{
     color:black;
     height: 200px;
-    width: 1200px;
+    width: 1000px;
     background-color: white;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 100px;
 }
@@ -291,7 +296,10 @@ a:hover{
     justify-content: center;
     flex: 0 1 auto;
 } 
-
+.call-img{
+    width: 150px;
+    margin-bottom: 80px;
+}
 .call{
     color: black;
     font-size: 25px;
