@@ -160,8 +160,6 @@ a:hover{
 
 
 
-
-
 /* Mid container that had info */
 .char-container{
     height: 500px;
@@ -265,7 +263,7 @@ a:hover{
 }
 
 
-
+/* The Call container */
 .join{
     background-color: #6A0D18;
     height: 300px;
@@ -300,6 +298,7 @@ a:hover{
     width: 150px;
     margin-bottom: 80px;
 }
+
 .call{
     color: black;
     font-size: 25px;
